@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    ;
+
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 400px;
+    height: 800px;
+    background: #C8E6C9;
+    text-align: center;
+    padding: 20px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+}
+
+.weather-icon {
+    font-size: 72px;
+    padding: 20px 0;
+
+}
+
+.weather-temperature {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.weather-unit {
+    display: flex;
+    font-size: 36px;
+    margin-left: 250px;
+    margin-top: -80px;
+
+
+}
+
+.weather-forecast {
+    margin: 50px 120px;
+    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 16px;
+}

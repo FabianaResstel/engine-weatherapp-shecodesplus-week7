@@ -6,35 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo1.jpg" alt="logo" width="300px">
+    <div class="container">
+        <img src="images/logo1.jpg" alt="branch" width="100px" class="picture">
         <h1>Lisbon</h1>
         <h2>Tuesday , May 5. 2026 | 02:07 PM</h2>
 
 
 
-    </header>
-    <main>
 
-        <div class="container">
-            <div class="weather-icon">🌧️</div>
-            <span class="weather-temperature">24</span>
-            <span class="weather-unit">°C</span>
-            <div class="weather-forecast">Moderate Rain</div>
-            <div class="weather-humidity">
-                <div class="weather-humidity-icon">💧</div>
-                <div class="weather-humidity-data">82%</div>
-                <div class="weather-wind-icon">🍃</div>
-                <div class="weather-wind-data">15 km/h</div>
-            </div>
-            <form class="search">
-                <input type="search" placeholder="Enter a city">
-                <input type="submit" value="search">
-            </form>
+
+
+        <div class="weather-icon">🌧️</div>
+        <span class="weather-temperature">24</span>
+        <span class="weather-unit">°C</span>
+        <div class="weather-forecast">Moderate Rain</div>
+        <div class="weather-humidity">
+            <span class="weather-humidity-icon">💧</span>
+            <span class="weather-humidity-data">82%</span>
         </div>
+        <div class="weather-wind-icon">🍃</div>
+        <div class="weather-wind-data">15 km/h</div>
+
+        <form class="search">
+            <input type="search" placeholder="Enter a city">
+            <input type="submit" value="search">
+        </form>
+    </div>
     </main>
     <footer>
         <div class="footer">
