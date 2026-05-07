@@ -11,7 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
-</head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=air" />
+
 
 <body>
     <div class="container">
@@ -19,34 +21,36 @@
         <h1>Lisbon</h1>
         <h2>Tuesday , May 5. 2026 | 02:07 PM</h2>
 
-
-
-
-
-
-        <div class="weather-icon">🌧️</div>
+        <div class="weather-icon"> <img src="images/rainy.png" alt="rainy" width="100px"> </div>
         <span class="weather-temperature">24</span>
         <span class="weather-unit">°C</span>
         <div class="weather-forecast">Moderate Rain</div>
         <div class="weather-humidity">
-            <span class="weather-humidity-icon">💧</span>
+            <span class="weather-humidity-icon">💧
+            </span>
             <span class="weather-humidity-data">82%</span>
+
         </div>
-        <div class="weather-wind-icon">🍃</div>
-        <div class="weather-wind-data">15 km/h</div>
+        <div class="weather-wind">
+            <span class="material-symbols-outlined">
+                air
+            </span>
+            <span class="weather-wind-data">15 km/h</span>
+        </div>
 
         <form class="search">
             <input type="search" placeholder="Enter a city">
-            <input type="submit" value="search">
+            <input type="submit" value="🔍">
         </form>
     </div>
-    </main>
-    <footer>
-        <div class="footer">
-            Coded by <a href="#">Fabiana Resstel</a> | <a href="#">GitHub</a> | <a href="#">Netlify</a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+
+</body>
+<footer>
+    <div class="footer">
+        Coded by <a href="#">Fabiana Resstel</a> | <a href="#">GitHub</a> | <a href="#">Netlify</a>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 
 </html>
