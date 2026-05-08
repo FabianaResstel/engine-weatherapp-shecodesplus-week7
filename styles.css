@@ -17,10 +17,10 @@ h2 {
 .container {
     display: block;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
     max-width: 400px;
     height: 770px;
-    background: #C8E6C9;
+    background: linear-gradient(180deg, #87e28a 0%, #C8E6C9 100%);
     text-align: center;
     padding: 20px;
 
@@ -109,5 +109,5 @@ footer {
 }
 
 a {
-    color: #3da340
+    color: #4CAF50
 }
