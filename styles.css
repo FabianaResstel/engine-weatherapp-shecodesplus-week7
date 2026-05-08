@@ -30,10 +30,11 @@ h2 {
 }
 
 .weather-icon {
-    font-size: 72px;
-    padding: 20px 0;
 
+    padding: 20px 0;
 }
+
+
 
 .weather-temperature {
     font-size: 72px;
