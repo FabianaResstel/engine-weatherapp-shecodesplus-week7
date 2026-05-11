@@ -23,25 +23,25 @@
         <h2>Tuesday , May 5. 2026 | 02:07 PM</h2>
 
         <div class="weather-icon"> <img src="images/rainy.png" alt="rainy" width="100px"> </div>
-        <span class="weather-temperature">24</span>
+        <span class="weather-temperature" id="weather-temperature-response">24</span>
         <span class="weather-unit">°C</span>
-        <div class="weather-forecast">Moderate Rain</div>
+        <div class="weather-forecast" id="weather-forecast-response">Moderate Rain</div>
         <div class="weather-humidity">
             <span class="weather-humidity-icon">💧
             </span>
-            <span class="weather-humidity-data">82%</span>
+            <span class="weather-humidity-data" id="weather-humidity-response">82%</span>
 
         </div>
         <div class="weather-wind">
             <span class="material-symbols-outlined">
                 air
             </span>
-            <span class="weather-wind-data">15 km/h</span>
+            <span class="weather-wind-data" id="weather-wind-response">15 km/h</span>
         </div>
 
-        <form class="search">
-            <input type="search" placeholder="Enter a city" required class="search-input">
-            <input type="submit" value="🔍" class="search-button">
+        <form class="search" id="search-form">
+            <input type="search" placeholder="Enter a city" required class="search-input" id="search-form-input">
+            <input type="submit" value="🔍" class="search-button" id="search-form-button">
         </form>
     </div>
 
