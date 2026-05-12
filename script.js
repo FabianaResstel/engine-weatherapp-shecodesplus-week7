@@ -10,7 +10,9 @@ function changeDataHtml(response) {
   let windSpeedElement = document.querySelector("#weather-wind-response");
   let timeElement = document.querySelector("h2");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#weather-icon-response");
 
+  icon.innerHTML = `<img src = "${response.data.condition.icon_url}" class="weather-icon" />`;
   h1.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   weatherTemperatureElement.innerHTML = `${Math.round(
