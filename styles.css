@@ -41,14 +41,6 @@ h2 {
     font-weight: 700;
 }
 
-.weather-unit {
-    display: flex;
-    font-size: 36px;
-    margin-left: 250px;
-    margin-top: -80px;
-
-
-}
 
 .weather-forecast {
     margin: 50px 120px;

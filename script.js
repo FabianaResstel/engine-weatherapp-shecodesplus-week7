@@ -15,7 +15,7 @@ function changeDataHtml(response) {
   timeElement.innerHTML = formatDate(date);
   weatherTemperatureElement.innerHTML = `${Math.round(
     response.data.temperature.current,
-  )}`;
+  )}°C`;
   weatherForecastElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${Math.round(response.data.temperature.humidity)}%`;
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
