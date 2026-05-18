@@ -18,7 +18,10 @@
 
 <body>
     <div class="container">
-        <img src="images/logo1.jpg" alt="branch" width="100px" class="picture">
+        <form class="search" id="search-form">
+            <input type="search" placeholder="Enter a city" required class="search-input" id="search-form-input">
+            <input type="submit" value="🔍" class="search-button" id="search-form-button">
+        </form>
         <h1></h1>
         <h2 id="time"></h2>
 
@@ -38,11 +41,12 @@
             </span>
             <span class="weather-wind-data" id="weather-wind-response"></span>
         </div>
+        <div class="forecast" id="forecast">
 
-        <form class="search" id="search-form">
-            <input type="search" placeholder="Enter a city" required class="search-input" id="search-form-input">
-            <input type="submit" value="🔍" class="search-button" id="search-form-button">
-        </form>
+
+
+        </div>
+
     </div>
 
 </body>

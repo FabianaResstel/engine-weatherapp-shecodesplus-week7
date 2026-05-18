@@ -31,20 +31,21 @@ h2 {
 
 .weather-icon {
     width: 150px;
-
-    margin: 0 auto;
+    margin: -10px auto 0;
+    display: flex;
 }
 
 
 
 .weather-temperature {
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 700;
+
 }
 
 
 .weather-forecast {
-    margin: 40px 120px;
+    margin: 30px 120px;
     background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
     padding: 10px;
     border-radius: 40px;
@@ -102,6 +103,51 @@ footer {
 
 }
 
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.forecast-day {
+    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    border-radius: 26px;
+    padding: 15px;
+
+}
+
+
+
+
+
+.forecast-weekday {
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-icon {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+
+
+}
+
+.forecast-min-temperature {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-max-temperature {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+
 a {
-    color: #4CAF50
+    color: #348c37
 }
