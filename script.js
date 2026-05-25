@@ -14,7 +14,7 @@ function changeDataHtml(response) {
 
   icon.innerHTML = `<img src = "${response.data.condition.icon_url}" class="weather-icon" />`;
   h1.innerHTML = `${response.data.city}, ${response.data.country}`;
-  timeElement.innerHTML = formatDate(date);
+
   weatherTemperatureElement.innerHTML = `${Math.round(
     response.data.temperature.current,
   )}°C`;
@@ -22,42 +22,23 @@ function changeDataHtml(response) {
   humidityElement.innerHTML = `${Math.round(response.data.temperature.humidity)}%`;
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   getForecast(response.data.city);
+  startClock();
 }
 
-function formatDate(date) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
+let clockInterval = null;
 
-  let day = days[date.getDay()];
-  let month = months[date.getMonth()];
-  let todayDate = date.getDate();
-  let hour = date.getHours().toString().padStart(2, "0");
-  let minutes = date.getMinutes().toString().padStart(2, "0");
-  let year = date.getFullYear();
+function startClock() {
+  let timeElement = document.querySelector("h2");
 
-  return `${day}, ${month} ${todayDate}, ${year} | ${hour}:${minutes}`;
+  if (clockInterval) {
+    clearInterval(clockInterval);
+  }
+
+  clockInterval = setInterval(function () {
+    timeElement.innerHTML = moment().format("dddd, MMMM D, YYYY [|] H:mm");
+  }, 1000);
 }
+
 function apiElement(city) {
   let apiKey = `0d9d6fa642662e53t328bfec1ado0b77`;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;

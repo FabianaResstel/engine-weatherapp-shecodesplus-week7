@@ -17,12 +17,12 @@ h2 {
 .container {
     display: block;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
     max-width: 400px;
-    height: 770px;
+
     background: linear-gradient(180deg, #87e28a 0%, #C8E6C9 100%);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 
     border-radius: 40px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
