@@ -46,6 +46,22 @@ function apiElement(city) {
   axios.get(apiUrl).then(changeDataHtml);
 }
 
+function getLocation() {
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
+      let apiKey = `0d9d6fa642662e53t328bfec1ado0b77`;
+      let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
+
+      axios.get(apiUrl).then(changeDataHtml);
+    },
+    function () {
+      apiElement("brasilia");
+    },
+  );
+}
+
 function searchForm(event) {
   event.preventDefault();
 
@@ -87,4 +103,4 @@ function displayForecast(response) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchForm);
 
-apiElement("brasilia");
+getLocation();
