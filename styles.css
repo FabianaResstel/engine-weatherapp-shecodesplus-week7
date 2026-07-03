@@ -1,17 +1,21 @@
 body {
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
-    ;
+    background: linear-gradient(180deg, #DCF0DF 0%, #EFF8ED 100%);
     font-family: "DM Sans", sans-serif;
+    color: #3B5943;
 }
 
 h1 {
+    font-family: "Roboto Slab", serif;
     font-size: 32px;
+    font-weight: 600;
+    color: #3B5943;
+    letter-spacing: -0.3px;
 }
 
 h2 {
     font-size: 14px;
     font-weight: 300;
-
+    color: #6B8570;
 }
 
 .container {
@@ -20,13 +24,13 @@ h2 {
     margin-top: 20px;
     max-width: 400px;
 
-    background: linear-gradient(180deg, #87e28a 0%, #C8E6C9 100%);
+    background: linear-gradient(180deg, #C7E6CA 0%, #E9F5E7 100%);
     text-align: center;
     padding: 10px;
 
     border-radius: 40px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-
+    box-shadow: 0 8px 28px rgba(63, 91, 71, 0.10);
+    border: 1px solid #D3E9D5;
 }
 
 .weather-icon {
@@ -35,36 +39,36 @@ h2 {
     display: flex;
 }
 
-
-
 .weather-temperature {
     font-size: 62px;
     font-weight: 700;
-
+    color: #3B5943;
 }
-
 
 .weather-forecast {
     margin: 30px 120px;
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    background: linear-gradient(180deg, #CDE8D0 0%, #EAF6E9 100%);
+    border: 1px solid #B8DCBB;
     padding: 10px;
     border-radius: 40px;
     font-size: 16px;
+    color: #4C6B52;
 }
 
 .weather-humidity {
     margin: 0 250px 0 60px;
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    background: linear-gradient(180deg, #CDE8D0 0%, #EAF6E9 100%);
+    border: 1px solid #B8DCBB;
     padding: 10px;
     border-radius: 40px;
     font-size: 16px;
-
-
+    color: #4C6B52;
 }
 
 .weather-wind {
     display: flex;
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    background: linear-gradient(180deg, #CDE8D0 0%, #EAF6E9 100%);
+    border: 1px solid #B8DCBB;
 
     gap: 5px;
     justify-content: right;
@@ -73,6 +77,7 @@ h2 {
     padding: 10px 15px 10px 0px;
     margin-top: -40px;
     margin-right: 40px;
+    color: #4C6B52;
 }
 
 .search {
@@ -80,18 +85,23 @@ h2 {
 }
 
 .search-input {
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
-    border: none;
+    background: linear-gradient(180deg, #CDE8D0 0%, #EAF6E9 100%);
+    border: 1px solid #B8DCBB;
     border-radius: 16px;
     width: 70%;
     padding: 10px;
     font-size: 16px;
+    color: #3B5943;
+}
+
+.search-input::placeholder {
+    color: #8CA893;
 }
 
 .search-button {
-    border: none;
+    border: 1px solid #B8DCBB;
     border-radius: 16px;
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    background: linear-gradient(180deg, #CDE8D0 0%, #EAF6E9 100%);
     padding: 8px 20px;
 }
 
@@ -100,7 +110,7 @@ footer {
     justify-content: center;
     gap: 5px;
     margin-top: 10px;
-
+    color: #6B8570;
 }
 
 .forecast {
@@ -110,15 +120,12 @@ footer {
 }
 
 .forecast-day {
-    background: linear-gradient(180deg, #4CAF50 0%, #C8E6C9 100%);
+    background: linear-gradient(180deg, #CDE8D0 0%, #EAF6E9 100%);
+    border: 1px solid #B8DCBB;
     border-radius: 26px;
     padding: 15px;
-
+    color: #4C6B52;
 }
-
-
-
-
 
 .forecast-weekday {
     display: flex;
@@ -129,8 +136,6 @@ footer {
     display: flex;
     justify-content: center;
     width: 30px;
-
-
 }
 
 .forecast-min-temperature {
@@ -147,7 +152,6 @@ footer {
     justify-content: center;
 }
 
-
 a {
-    color: #348c37
+    color: #4C9455;
 }
